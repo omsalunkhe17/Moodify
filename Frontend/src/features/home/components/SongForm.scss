@@ -1,0 +1,62 @@
+.song-form {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.song-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.song-form__group label {
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+.song-form__group input,
+.song-form__group select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0f172a;
+  color: #f9fafb;
+}
+
+.song-form__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #f59e0b;
+  color: #111827;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(17, 24, 39, 0.25);
+  border-top-color: #111827;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.song-form__button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}

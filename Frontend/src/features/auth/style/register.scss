@@ -1,0 +1,68 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // same gradient as login (consistency 🔥)
+  background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+
+  .register-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    width: 360px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    h1 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+
+    // This targets your reusable FormGroup inputs
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+      label {
+        font-size: 0.9rem;
+        color: #ccc;
+        margin-bottom: 0.4rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.7rem 0.8rem;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 0.95rem;
+        transition: all 0.2s ease;
+
+        &::placeholder {
+          color: #aaa;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: #b73333;
+          box-shadow: 0 0 0 2px rgba(183, 51, 51, 0.3);
+        }
+      }
+    }
+  }
+}

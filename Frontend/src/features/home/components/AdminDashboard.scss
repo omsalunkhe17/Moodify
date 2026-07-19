@@ -1,0 +1,130 @@
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  color: #f9fafb;
+}
+
+.admin-dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-dashboard__header h2,
+.admin-dashboard__panel h3 {
+  margin: 0 0 6px;
+}
+
+.admin-dashboard__links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-dashboard__link {
+  color: #f59e0b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.admin-dashboard__message {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(34, 197, 94, 0.18);
+  color: #dcfce7;
+}
+
+.admin-dashboard__error {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.2);
+  color: #fee2e2;
+}
+
+.admin-dashboard__grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.admin-dashboard__panel {
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.admin-dashboard__filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-dashboard__filters input,
+.admin-dashboard__filters select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0f172a;
+  color: #f9fafb;
+}
+
+.admin-dashboard__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-dashboard__loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.admin-dashboard__poster {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.admin-dashboard__item-content {
+  flex: 1;
+}
+
+.admin-dashboard__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-dashboard__actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  background: #f59e0b;
+  color: #111827;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .admin-dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+}
