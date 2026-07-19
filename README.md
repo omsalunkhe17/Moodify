@@ -145,19 +145,27 @@ REDIS_URL=YOUR_REDIS_URL
 
 ### Login
 
-(Add Screenshot)
+(<img width="1920" height="1080" alt="Login" src="https://github.com/user-attachments/assets/cc2234f4-9d64-4ed5-ac5e-52cf6bc9e1ce" />)
 
 ### Register
 
-(Add Screenshot)
+(<img width="1920" height="1080" alt="Register" src="https://github.com/user-attachments/assets/7d4b8093-9f38-4b5d-8837-0cd0defca6c7" />)
 
 ### Home
 
-(Add Screenshot)
+(<img width="1920" height="1080" alt="Home" src="https://github.com/user-attachments/assets/d132018b-52a2-4113-996f-5f20db523b04" />)
 
 ### Song Upload
 
-(Add Screenshot)
+(<img width="1920" height="1080" alt="Upload" src="https://github.com/user-attachments/assets/8f995f12-089f-4d7a-ace9-fa2b2a320016" />)
+
+### Song Playlist
+
+(<img width="1920" height="1080" alt="Playlist" src="https://github.com/user-attachments/assets/a2ac4ab1-d6af-49c6-a732-defa5f08b4b8" />)
+
+## Detecting Page
+
+(<img width="1920" height="1080" alt="Detecting Home" src="https://github.com/user-attachments/assets/c06fc636-14a7-4ba2-8760-b2c3a7b2c018" />)
 
 ---
 
