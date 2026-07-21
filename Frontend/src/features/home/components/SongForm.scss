@@ -1,10 +1,10 @@
 .song-form {
   display: grid;
   gap: 14px;
-  padding: 20px;
+  padding: 18px;
   border-radius: 16px;
-  background: rgba(17, 24, 39, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .song-form__group {
@@ -14,17 +14,17 @@
 }
 
 .song-form__group label {
-  color: #e5e7eb;
+  color: #e2e8f0;
   font-weight: 600;
 }
 
 .song-form__group input,
 .song-form__group select {
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: #0f172a;
-  color: #f9fafb;
+  padding: 11px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f8fafc;
 }
 
 .song-form__button {
@@ -32,13 +32,23 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  width: 100%;
   padding: 12px 14px;
   border: none;
-  border-radius: 10px;
-  background: #f59e0b;
-  color: #111827;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f59e0b, #7c3aed);
+  color: #fff;
   font-weight: 700;
   cursor: pointer;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+  box-shadow: 0 10px 24px rgba(245, 158, 11, 0.18);
+}
+
+.song-form__button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(124, 58, 237, 0.22);
 }
 
 .spinner {

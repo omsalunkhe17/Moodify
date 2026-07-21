@@ -99,20 +99,29 @@ const AdminDashboard = () => {
 
   return (
     <div className="admin-dashboard">
-      <div className="admin-dashboard__header">
-        <div>
-          <h2>Admin Dashboard</h2>
-          <p>Manage uploads, songs, and playlists.</p>
+      <header className="admin-dashboard__header">
+        <div className="admin-dashboard__heading">
+          <div className="admin-dashboard__icon">🎵</div>
+          <div>
+            <h2>Admin Dashboard</h2>
+            <p>Manage songs, uploads, and playlists with ease.</p>
+          </div>
         </div>
-        <div className="admin-dashboard__links">
+
+        <div className="admin-dashboard__links" aria-label="Admin navigation">
           <a className="admin-dashboard__link" href="/">
+            <span>🏠</span>
             Home
           </a>
-          <a className="admin-dashboard__link" href="/admin/upload">
+          <a
+            className="admin-dashboard__link admin-dashboard__link--active"
+            href="/admin/upload"
+          >
+            <span>⬆️</span>
             Upload Song
           </a>
         </div>
-      </div>
+      </header>
 
       {message ? (
         <div className="admin-dashboard__message">{message}</div>
@@ -120,8 +129,13 @@ const AdminDashboard = () => {
       {error ? <div className="admin-dashboard__error">{error}</div> : null}
 
       <div className="admin-dashboard__grid">
-        <section className="admin-dashboard__panel">
-          <h3>Upload Song</h3>
+        <section className="admin-dashboard__panel admin-dashboard__panel--form">
+          <div className="admin-dashboard__panel-head">
+            <div>
+              <h3>Upload Song</h3>
+              <p>Add a new track for mood-based playback.</p>
+            </div>
+          </div>
           <SongForm
             onSubmit={handleCreate}
             isLoading={loading}
@@ -129,8 +143,14 @@ const AdminDashboard = () => {
           />
         </section>
 
-        <section className="admin-dashboard__panel">
-          <h3>All Songs</h3>
+        <section className="admin-dashboard__panel admin-dashboard__panel--list">
+          <div className="admin-dashboard__panel-head">
+            <div>
+              <h3>All Songs</h3>
+              <p>Browse and manage your current library.</p>
+            </div>
+          </div>
+
           <div className="admin-dashboard__filters">
             <input
               value={search}
@@ -182,7 +202,12 @@ const AdminDashboard = () => {
 
       {editingSong ? (
         <section className="admin-dashboard__panel admin-dashboard__panel--edit">
-          <h3>Edit Song</h3>
+          <div className="admin-dashboard__panel-head">
+            <div>
+              <h3>Edit Song</h3>
+              <p>Update the selected track details.</p>
+            </div>
+          </div>
           <SongForm
             initialValues={editingSong}
             onSubmit={(formData) => handleEdit(editingSong._id, formData)}
